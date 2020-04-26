@@ -9,6 +9,7 @@ Given user navigates to testmeapp
 When User enter Username as "<username>" and Password as "<password>"
 
 Examples: −
+
 | username  | password  |
 | raghu2241 | 123456 |
  
@@ -19,9 +20,8 @@ Scenario Outline: Search a product and select the first product to find
   
   When User should type first four letter of desired product as "<name>"
  
- And select the first item that appears in the search result to find product detail
+ Then select the first item that appears in the search result to find product detail
 
 Examples: − 
  | name |
  | head |
-       

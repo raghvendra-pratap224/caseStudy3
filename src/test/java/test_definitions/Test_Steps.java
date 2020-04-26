@@ -8,7 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class Test_Steps {
@@ -51,9 +53,10 @@ public class Test_Steps {
 		
 	}
 
-	@When("^select the first item that appears in the search result to find product detail$")
+	@Then("^select the first item that appears in the search result to find product detail$")
 	public void select_the_first_item_that_appears_in_the_search_result_to_find_product_detail() throws Throwable {
 		System.out.print("Product Displayed");
+		driver.close();
 	}
 
 
